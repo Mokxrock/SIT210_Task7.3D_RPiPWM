@@ -37,12 +37,12 @@ try:
         print ("distance:",distance,"cm") # Print Distance
 
         if distance<=50:  # Less then or Equal to 50cm
-            for x in range(50,101,10): # Starting from 50 Hertz and End with 100 HErtz and add 10 hertz to each loop 
+            for x in range(50,101,10): # Starting from 50 Hertz and End with 100hz and add 10hz to each loop 
                 p.ChangeDutyCycle(x) # Change LED brightness
                 time.sleep(0.1) # Stay for  0.1 Second
                 
         elif distance>50: # More then 50cm
-            for x in range(50,-1,-10): # Starting from 50 hertz it will decrease by 10 at a time until then 0  
+            for x in range(50,-1,-10): # Starting from 50hz it will decrease by 10hz at a time until then 0  
                 p.ChangeDutyCycle(x) # Change LED brightness
                 time.sleep(0.1) # Stay for  0.1 Second
 
