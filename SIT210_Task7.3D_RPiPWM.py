@@ -6,13 +6,13 @@ GPIO.setmode(GPIO.BOARD)
 
 TRIG = 16 # Physical Pin 16 to GPIO 23 
 ECHO = 18 # Physical Pin 18 to GPIO 24
-LED = 12  # Physical Pin 13 to GPIO 18
+LED = 12  # Physical Pin 12 to GPIO 18
 
 GPIO.setup(TRIG,GPIO.OUT) # Set as Output
 GPIO.setup(ECHO,GPIO.IN) # Set as Input
 GPIO.setup(LED,GPIO.OUT) # Set as Output
  
-GPIO.output(TRIG, False) # Turn Of Sensor 
+GPIO.output(TRIG, False) # Turn Off Sensor 
 
 p = GPIO.PWM(LED, 100) #LED as PWM output, with 100Hz frequency
 p.start(0); # Starting from 0
